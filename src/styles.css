@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@600;700&display=swap");
+link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courgette", cursive;
+}
+
+.Header {
+  color: rgb(90, 89, 89);
+  background-color: #ffdf40;
+  box-shadow: 2px solid #f0c808;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  font-family: "Poppins", cursive;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.Header img {
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Header_main {
+  width: 100%;
+  text-align: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.wrapper {
+  width: 70%;
+
+  margin: 0 auto;
+}
+
+.Recipe {
+  margin: 30px;
+  background-color: #fcfcfc;
+  padding: 2em;
+  border-radius: 10px;
+  border: 2px solid green;
+}
+
+.Recipe-name {
+  font-family: "Poppins", cursive;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: orange;
+  text-align: center;
+  background-color: rgb(255, 228, 179);
+  padding: 7px;
+  margin-bottom: 20px;
+}
+
+.Recipe-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-size: 100%;
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background: rgb(88, 88, 88);
+}
+
+.Recipe-Ingredients {
+  width: 50%;
+  margin: 0 auto;
+  font-family: 17px;
+  text-align: center;
+}
+
+.Ingredients_heading {
+  font-size: 15px;
+}
+
+.Ingredients_heading h2 {
+  font-family: "Poppins", cursive;
+  color: rgb(54, 54, 54);
+  font-size: 25px;
+}
+
+.Ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.Ingredients-list li {
+  width: 31%;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.Recipe-steps {
+  border-bottom: 1px solid rgba(255, 112, 112, 0.459);
+  padding: 28px;
+}
+
+.Recipe-steps h1 {
+  font-size: 31px;
+  font-family: "Poppins", cursive;
+  color: rgb(54, 54, 54);
+}
+
+.Recipe-steps p {
+  padding: 0 30px;
+  line-height: 25px;
+}
+
+.contact {
+  background-color: #dd1c1a;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact h1 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", cursive;
+  font-size: 35px;
+  padding: 20px;
+}
+
+input {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f2f4f3;
+  outline: none;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+button {
+  line-height: 24px;
+  padding: 15px;
+  color: black;
+  background-color: #fae165;
+  border: 2px solid #ffe047;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 50px;
+  text-align: center;
+  background-color: gray;
+  box-shadow: 2px solid #bbbbbb;
+}
+
+@media (max-width: 1144px) {
+  .Ingredients-list li {
+    width: 40%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 665px) {
+  .Recipe-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 572px) {
+  .Ingredients-list li {
+    /* width: 40%; */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 514px) {
+  .Header {
+    font-size: 13px;
+  }
+
+  .Recipe-name {
+    font-size: 10px;
+  }
+
+  .Ingredients_heading h2 {
+    font-size: 20px;
+  }
+
+  .Recipe-steps h1 {
+    font-size: 23px;
+  }
+
+  .Recipe-steps p {
+    padding: 0 2px;
+    line-height: 20px;
+    font-size: 13px;
+  }
+}
